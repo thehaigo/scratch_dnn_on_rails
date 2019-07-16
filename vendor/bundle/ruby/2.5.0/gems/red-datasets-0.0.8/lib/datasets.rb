@@ -1,0 +1,13 @@
+require_relative "datasets/version"
+
+require_relative "datasets/adult"
+require_relative "datasets/cifar"
+require_relative "datasets/fashion-mnist"
+require_relative "datasets/iris"
+require_relative "datasets/libsvm"
+require_relative "datasets/libsvm-dataset-list"
+require_relative "datasets/mnist"
+require_relative "datasets/penn-treebank"
+require_relative "datasets/postal-code-japan"
+require_relative "datasets/wikipedia"
+require_relative "datasets/wine"

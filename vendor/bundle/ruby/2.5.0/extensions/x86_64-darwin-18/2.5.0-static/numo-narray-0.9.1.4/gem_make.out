@@ -1,0 +1,79 @@
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray
+/Users/shou/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190716-89304-n1s5hf.rb extconf.rb
+checking for stdbool.h... yes
+checking for stdint.h... yes
+checking for bool in stdbool.h... yes
+checking for u_int8_t in stdint.h... yes
+checking for u_int16_t in stdint.h... yes
+checking for int32_t in stdint.h... yes
+checking for u_int32_t in stdint.h... yes
+checking for int64_t in stdint.h... yes
+checking for u_int64_t in stdint.h... yes
+checking for exp10()... no
+checking for rb_cComplex... yes
+creating numo/extconf.h
+creating Makefile
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray
+make "DESTDIR=" clean
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray
+make "DESTDIR="
+compiling narray.c
+compiling array.c
+compiling step.c
+compiling index.c
+compiling ndloop.c
+compiling data.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/bit.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/bit.rb
+compiling types/bit.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/int8.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int8.rb
+compiling types/int8.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/int16.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int16.rb
+compiling types/int16.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/int32.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int32.rb
+compiling types/int32.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/int64.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int64.rb
+compiling types/int64.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/uint8.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint8.rb
+compiling types/uint8.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/uint16.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint16.rb
+compiling types/uint16.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/uint32.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint32.rb
+compiling types/uint32.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/uint64.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint64.rb
+compiling types/uint64.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/sfloat.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/sfloat.rb
+compiling types/sfloat.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/dfloat.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dfloat.rb
+compiling types/dfloat.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/scomplex.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/scomplex.rb
+compiling types/scomplex.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/dcomplex.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dcomplex.rb
+compiling types/dcomplex.c
+/usr/local/bin/gmkdir -p types types
+ruby /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb -l -o types/robject.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/robject.rb
+compiling types/robject.c
+compiling math.c
+compiling SFMT.c
+compiling struct.c
+compiling rand.c
+linking shared-object numo/narray.bundle
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 narray.bundle ./.gem.20190716-89304-1ftotkc/numo
+installing narray libraries

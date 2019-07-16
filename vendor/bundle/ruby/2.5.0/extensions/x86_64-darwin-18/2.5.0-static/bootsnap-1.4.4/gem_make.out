@@ -1,0 +1,15 @@
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+/Users/shou/.rbenv/versions/2.5.1/bin/ruby -r ./siteconf20190716-89304-2phs4k.rb extconf.rb
+creating Makefile
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.4/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190716-89304-1uiszat/bootsnap

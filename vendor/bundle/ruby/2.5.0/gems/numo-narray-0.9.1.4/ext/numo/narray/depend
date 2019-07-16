@@ -1,0 +1,81 @@
+TAGSRC = \
+ ../../ruby/include/ruby/*.h \
+ ../../ruby/*.c \
+ *.h \
+ types/*.h \
+ *.c \
+ types/*.c
+
+tags : TAGS
+TAGS : $(TAGSRC)
+	etags $(TAGSRC)
+
+doc :
+	yard doc *.c types/*.c
+
+C_TMPL = /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/store_numeric.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/clip.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/extract_data.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/accum_binary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/eye.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/allocate.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/extract.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/logseq.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/store_from.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/lib.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/rand.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/poly.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/bincount.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/init_class.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/cast_array.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/cond_binary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/class.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/frexp.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/map_with_index.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/cast.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/cum.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/median.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/each_with_index.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/format.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/inspect.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/sort.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/unary2.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/module.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/init_module.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/set2.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/coerce_cast.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/store_array.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/store.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/binary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/alloc_func.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/store_bit.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/qsort.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/unary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/pow.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/fill.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/powint.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/minmax.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/new_dim0.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/binary_s.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/aset.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/binary2.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/unary_s.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/sort_index.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/format_to_a.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/ewcomp.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/accum.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/seq.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/aref.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/each.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/cond_unary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/unary_ret2.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/accum_index.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/rand_norm.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl/to_a.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/allocate.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/extract.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/store_from.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/where.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/each_with_index.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/format.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/inspect.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/store_array.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/binary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/store_bit.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/unary.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/bit_reduce.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/fill.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/aset.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/mask.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/format_to_a.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/bit_count.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/none_p.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/aref.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/each.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/where2.c /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/tmpl_bit/to_a.c
+
+COGEN = /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/cogen.rb
+DEPENDS = $(C_TMPL) /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/*.rb
+
+
+types/int8.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int8.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int8.rb
+
+types/robject.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/robject.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/robject.rb
+
+types/dcomplex.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dcomplex.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dcomplex.rb
+
+types/int32.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int32.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int32.rb
+
+types/bit.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/bit.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/bit.rb
+
+types/int16.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int16.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int16.rb
+
+types/uint64.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint64.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint64.rb
+
+types/uint32.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint32.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint32.rb
+
+types/uint16.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint16.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint16.rb
+
+types/scomplex.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/scomplex.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/scomplex.rb
+
+types/int64.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int64.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/int64.rb
+
+types/dfloat.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dfloat.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/dfloat.rb
+
+types/uint8.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint8.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/uint8.rb
+
+types/sfloat.c: /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/sfloat.rb $(DEPENDS)
+	$(MAKEDIRS) $(@D) types
+	ruby $(COGEN) -l -o $@ /Users/shou/rails/scrach_dnn_on_rails/vendor/bundle/ruby/2.5.0/gems/numo-narray-0.9.1.4/ext/numo/narray/gen/def/sfloat.rb
+
+
+src : types/int8.c types/robject.c types/dcomplex.c types/int32.c types/bit.c types/int16.c types/uint64.c types/uint32.c types/uint16.c types/scomplex.c types/int64.c types/dfloat.c types/uint8.c types/sfloat.c
+
+CLEANOBJS = *.o */*.o *.bak types/*.c

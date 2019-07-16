@@ -1,0 +1,236 @@
+have_header: checking for stdbool.h... -------------------- yes
+
+"clang -o conftest -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/shou/.rbenv/versions/2.5.1/lib -L. -L/Users/shou/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib     -lruby.2.5.1-static -framework Foundation  -lpthread -lgmp -ldl -lobjc "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return 0;
+6: }
+/* end */
+
+"clang -E -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdbool.h>
+/* end */
+
+--------------------
+
+have_header: checking for stdint.h... -------------------- yes
+
+"clang -E -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+/* end */
+
+--------------------
+
+have_type: checking for bool in stdbool.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdbool.h>
+4: 
+5: /*top*/
+6: typedef bool conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for u_int8_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef u_int8_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for u_int16_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef u_int16_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for int32_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef int32_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for u_int32_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef u_int32_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for int64_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef int64_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_type: checking for u_int64_t in stdint.h... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <stdint.h>
+4: 
+5: /*top*/
+6: typedef u_int64_t conftest_type;
+7: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_func: checking for exp10()... -------------------- no
+
+"clang -o conftest -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/shou/.rbenv/versions/2.5.1/lib -L. -L/Users/shou/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib     -lruby.2.5.1-static -framework Foundation  -lpthread -lgmp -ldl -lobjc "
+conftest.c:13:57: error: use of undeclared identifier 'exp10'
+int t(void) { void ((*volatile p)()); p = (void ((*)()))exp10; return !p; }
+                                                        ^
+1 error generated.
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { void ((*volatile p)()); p = (void ((*)()))exp10; return !p; }
+/* end */
+
+"clang -o conftest -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/shou/.rbenv/versions/2.5.1/lib -L. -L/Users/shou/.rbenv/versions/2.5.1/lib  -fstack-protector -L/usr/local/lib     -lruby.2.5.1-static -framework Foundation  -lpthread -lgmp -ldl -lobjc "
+Undefined symbols for architecture x86_64:
+  "_exp10", referenced from:
+      _t in conftest-f27164.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: extern void exp10();
+14: int t(void) { exp10(); return 0; }
+/* end */
+
+--------------------
+
+have_var: checking for rb_cComplex... -------------------- yes
+
+"clang -Itypes -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/x86_64-darwin18 -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0/ruby/backward -I/Users/shou/.rbenv/versions/2.5.1/include/ruby-2.5.0 -I. -I/Users/shou/.rbenv/versions/2.5.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   -c conftest.c"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     printf("%p", &t);
+ 9:   }
+10: 
+11:   return 0;
+12: }
+13: int t(void) { const volatile void *volatile p; p = &(&rb_cComplex)[0]; return !p; }
+/* end */
+
+--------------------
+
+numo/extconf.h is:
+/* begin */
+ 1: #ifndef NUMO_EXTCONF_H
+ 2: #define NUMO_EXTCONF_H
+ 3: #define HAVE_STDBOOL_H 1
+ 4: #define HAVE_STDINT_H 1
+ 5: #define HAVE_TYPE_BOOL 1
+ 6: #define HAVE_TYPE_U_INT8_T 1
+ 7: #define HAVE_TYPE_U_INT16_T 1
+ 8: #define HAVE_TYPE_INT32_T 1
+ 9: #define HAVE_TYPE_U_INT32_T 1
+10: #define HAVE_TYPE_INT64_T 1
+11: #define HAVE_TYPE_U_INT64_T 1
+12: #define HAVE_RB_CCOMPLEX 1
+13: #endif
+/* end */
+
