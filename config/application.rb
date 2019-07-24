@@ -12,6 +12,8 @@ require "action_view/railtie"
 require "action_cable/engine"
 require "sprockets/railtie"
 require "chainer"
+require 'pycall/import'
+include PyCall::Import
 # require "rails/test_unit/railtie"
 
 # Require the gems listed in Gemfile, including any gems
@@ -30,5 +32,6 @@ module ScrachDnnOnRails
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.paths.add 'lib', eager_load: true
   end
 end
