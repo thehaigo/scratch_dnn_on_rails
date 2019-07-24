@@ -3,7 +3,8 @@ def sigmoid(x)
 end
 
 def softmax(a)
-  exp_a = Numo::NMath.exp(a)
+  c = a.max
+  exp_a = Numo::NMath.exp(a - c)
   sum_exp_a = exp_a.sum
   y = exp_a / sum_exp_a
 end
